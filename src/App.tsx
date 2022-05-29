@@ -22,7 +22,12 @@ let students:Students= {name:"shamim", roll: 30, id:"100"};
 
 
 // ___________function___________
+const handleEvent=(num1:number, num2:number):number=>{
+const total = num1 + num2;
+return total;
+}
 
+console.log((handleEvent(1,2)));
 
 
 function App() {
