@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+// primtive 
+let age:number = 24;
+let name:string = "Shamim";
+let isBolean:boolean = true;
+
+// ___________ 
+let num:number[] = [1,2,3,4,5];
+let person:string[] = ["shamim", "safi", "sakib"];
+
+
+interface Students {
+  name:string,
+  roll:number,
+  id:number | string,
+  sem?:string
+}
+
+let students:Students= {name:"shamim", roll: 30, id:"100"};
+
+
+// ___________function___________
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>{age}</p>
     </div>
   );
 }
