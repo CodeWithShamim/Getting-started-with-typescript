@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Counter from './pages/Counter';
 
 // primtive 
 let age:number = 24;
@@ -33,7 +34,7 @@ console.log((handleEvent(1,2)));
 function App() {
   return (
     <div className="App">
-        <p>{age}</p>
+       <Counter/>
     </div>
   );
 }
